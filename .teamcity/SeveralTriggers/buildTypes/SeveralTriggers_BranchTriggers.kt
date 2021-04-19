@@ -23,12 +23,6 @@ object SeveralTriggers_BranchTriggers : BuildType({
             enabled = false
         }
         vcs {
-            enabled = false
-            branchFilter = "+:branch1"
-            perCheckinTriggering = true
-            enableQueueOptimization = false
-        }
-        vcs {
             branchFilter = "+:branch3"
             perCheckinTriggering = true
             enableQueueOptimization = false
