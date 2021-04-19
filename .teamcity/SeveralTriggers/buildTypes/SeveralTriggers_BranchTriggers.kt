@@ -26,7 +26,6 @@ object SeveralTriggers_BranchTriggers : BuildType({
             branchFilter = "+:branch1"
         }
         vcs {
-            enabled = false
             branchFilter = "+:branch3"
         }
         vcs {
