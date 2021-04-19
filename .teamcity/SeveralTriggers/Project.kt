@@ -18,7 +18,6 @@ object Project : Project({
     vcsRoot(SeveralTriggers_HttpsGithubComIyankeNotPortableRefsHeadsMain)
 
     buildType(SeveralTriggers_BranchTriggers)
-    buildType(SeveralTriggers_BranchTriggersCopy)
 
     template(SeveralTriggers_Template)
 
