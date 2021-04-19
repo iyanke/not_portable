@@ -2,6 +2,7 @@ package SeveralTriggers.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.schedule
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
 object SeveralTriggers_BranchTriggers : BuildType({
@@ -33,6 +34,9 @@ object SeveralTriggers_BranchTriggers : BuildType({
                 +:*
                 +:branch2
             """.trimIndent()
+        }
+        schedule {
+            triggerBuild = always()
         }
     }
 })
