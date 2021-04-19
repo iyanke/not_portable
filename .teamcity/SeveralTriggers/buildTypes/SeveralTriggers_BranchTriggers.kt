@@ -37,9 +37,6 @@ object SeveralTriggers_BranchTriggers : BuildType({
             triggerBuild = always()
         }
         schedule {
-            schedulingPolicy = daily {
-                hour = 13
-            }
             triggerBuild = always()
         }
     }
