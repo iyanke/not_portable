@@ -29,10 +29,7 @@ object SeveralTriggers_BranchTriggers : BuildType({
             enableQueueOptimization = false
         }
         vcs {
-            branchFilter = """
-                +:*
-                +:branch2
-            """.trimIndent()
+            branchFilter = "+:branch3"
         }
         schedule {
             triggerBuild = always()
