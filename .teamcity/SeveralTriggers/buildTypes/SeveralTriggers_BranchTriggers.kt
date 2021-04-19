@@ -41,6 +41,7 @@ object SeveralTriggers_BranchTriggers : BuildType({
             withPendingChangesOnly = false
         }
         schedule {
+            enabled = false
             triggerBuild = always()
         }
     }
