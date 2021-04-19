@@ -30,6 +30,8 @@ object SeveralTriggers_BranchTriggers : BuildType({
         }
         vcs {
             branchFilter = "+:branch3"
+            perCheckinTriggering = true
+            enableQueueOptimization = false
         }
         schedule {
             triggerBuild = always()
