@@ -20,6 +20,8 @@ object Project : Project({
     buildType(SeveralTriggers_BranchTriggers)
     buildType(SeveralTriggers_BranchTriggersCopy)
 
+    template(SeveralTriggers_Template)
+
     features {
         versionedSettings {
             id = "PROJECT_EXT_109"
