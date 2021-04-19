@@ -29,7 +29,6 @@ object SeveralTriggers_BranchTriggers : BuildType({
             enableQueueOptimization = false
         }
         vcs {
-            enabled = false
             branchFilter = """
                 +:*
                 +:branch2
