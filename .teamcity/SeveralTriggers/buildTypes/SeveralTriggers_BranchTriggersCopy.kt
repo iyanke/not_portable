@@ -15,5 +15,9 @@ object SeveralTriggers_BranchTriggersCopy : BuildType({
             quietPeriodMode = VcsTrigger.QuietPeriodMode.USE_CUSTOM
             quietPeriod = 69
         }
+        vcs {
+            id = "TRIGGER_4"
+            branchFilter = "+:branch2"
+        }
     }
 })
