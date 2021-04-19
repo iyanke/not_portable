@@ -34,7 +34,11 @@ object SeveralTriggers_BranchTriggers : BuildType({
             enableQueueOptimization = false
         }
         schedule {
+            schedulingPolicy = cron {
+                minutes = "*"
+            }
             triggerBuild = always()
+            withPendingChangesOnly = false
         }
         schedule {
             triggerBuild = always()
