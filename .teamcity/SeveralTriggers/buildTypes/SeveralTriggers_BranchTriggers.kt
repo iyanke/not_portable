@@ -20,6 +20,7 @@ object SeveralTriggers_BranchTriggers : BuildType({
 
     triggers {
         vcs {
+            enabled = false
         }
         vcs {
             enabled = false
