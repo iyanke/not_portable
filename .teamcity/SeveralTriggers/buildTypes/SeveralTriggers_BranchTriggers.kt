@@ -29,7 +29,7 @@ object SeveralTriggers_BranchTriggers : BuildType({
             enableQueueOptimization = false
         }
         vcs {
-            branchFilter = "+:branch3"
+            branchFilter = "+:branch2"
             perCheckinTriggering = true
             enableQueueOptimization = false
         }
