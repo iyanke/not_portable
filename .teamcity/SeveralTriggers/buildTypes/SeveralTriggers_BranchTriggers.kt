@@ -28,21 +28,27 @@ object SeveralTriggers_BranchTriggers : BuildType({
             perCheckinTriggering = true
             enableQueueOptimization = false
         }
-        vcs {
-            branchFilter = "+:branch1"
-            perCheckinTriggering = true
-            enableQueueOptimization = false
-        }
         schedule {
+            enabled = false
             schedulingPolicy = cron {
                 minutes = "*"
             }
+            branchFilter = """
+                +:*
+                
+                -:branch8
+            """.trimIndent()
             triggerBuild = always()
             withPendingChangesOnly = false
         }
         schedule {
-            enabled = false
+            schedulingPolicy = daily {
+                hour = 13
+                minute = 25
+            }
+            branchFilter = "+:branch8"
             triggerBuild = always()
+            withPendingChangesOnly = false
         }
     }
 })
