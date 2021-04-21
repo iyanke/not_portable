@@ -1,6 +1,8 @@
 package SeveralTriggers.buildTypes
 
+import SeveralTriggers.vcsRoots.SeveralTriggers_HttpsGithubComIyankeThird1refsHeadsMain
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.VcsTrigger
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
 object SeveralTriggers_Build : BuildType({
@@ -15,6 +17,12 @@ object SeveralTriggers_Build : BuildType({
 
     triggers {
         vcs {
+            quietPeriodMode = VcsTrigger.QuietPeriodMode.USE_CUSTOM
+            quietPeriod = 10
+            triggerRules = "+:root=${SeveralTriggers_HttpsGithubComIyankeThird1refsHeadsMain.id}:**"
+
+            perCheckinTriggering = true
+            enableQueueOptimization = false
         }
     }
 })
