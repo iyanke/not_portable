@@ -24,5 +24,11 @@ object SeveralTriggers_Build : BuildType({
             perCheckinTriggering = true
             enableQueueOptimization = false
         }
+        vcs {
+            quietPeriodMode = VcsTrigger.QuietPeriodMode.USE_CUSTOM
+            quietPeriod = 600
+            triggerRules = "+:root=HttpUnit1413LabsIntelliJNetSvnArtifacts:**"
+
+        }
     }
 })
