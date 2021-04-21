@@ -33,7 +33,7 @@ object SeveralTriggers_Build : BuildType({
         }
         vcs {
             quietPeriodMode = VcsTrigger.QuietPeriodMode.USE_CUSTOM
-            quietPeriod = 120
+            quietPeriod = 600
             triggerRules = "+:root=${SeveralTriggers_HttpsGithubComIyankeNew1refsHeadsMain.id}:**"
 
         }
