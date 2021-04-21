@@ -10,6 +10,7 @@ object SeveralTriggers_Build : BuildType({
     vcs {
         root(SeveralTriggers.vcsRoots.SeveralTriggers_HttpsGithubComIyankeThird1refsHeadsMain)
         root(SeveralTriggers.vcsRoots.SeveralTriggers_HttpsGithubComIyankeNew1refsHeadsMain)
+        root(AbsoluteId("HttpUnit1413LabsIntelliJNetSvnArtifacts"))
     }
 
     triggers {
