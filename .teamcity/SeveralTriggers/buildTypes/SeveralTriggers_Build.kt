@@ -1,5 +1,6 @@
 package SeveralTriggers.buildTypes
 
+import SeveralTriggers.vcsRoots.SeveralTriggers_HttpsGithubComIyankeNew1refsHeadsMain
 import SeveralTriggers.vcsRoots.SeveralTriggers_HttpsGithubComIyankeThird1refsHeadsMain
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.VcsTrigger
@@ -28,6 +29,12 @@ object SeveralTriggers_Build : BuildType({
             quietPeriodMode = VcsTrigger.QuietPeriodMode.USE_CUSTOM
             quietPeriod = 600
             triggerRules = "+:root=HttpUnit1413LabsIntelliJNetSvnArtifacts:**"
+
+        }
+        vcs {
+            quietPeriodMode = VcsTrigger.QuietPeriodMode.USE_CUSTOM
+            quietPeriod = 120
+            triggerRules = "+:root=${SeveralTriggers_HttpsGithubComIyankeNew1refsHeadsMain.id}:**"
 
         }
     }
