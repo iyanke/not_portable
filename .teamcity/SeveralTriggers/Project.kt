@@ -14,10 +14,12 @@ object Project : Project({
     parentId("_Root")
     name = "Several Triggers"
 
+    vcsRoot(SeveralTriggers_HttpsGithubComIyankeThird1refsHeadsMain)
     vcsRoot(SeveralTriggers_HttpsGithubComIyankeNew1refsHeadsMain)
     vcsRoot(SeveralTriggers_HttpsGithubComIyankeNotPortableRefsHeadsMain)
 
     buildType(SeveralTriggers_BranchTriggers)
+    buildType(SeveralTriggers_Build)
 
     template(SeveralTriggers_Template)
 
